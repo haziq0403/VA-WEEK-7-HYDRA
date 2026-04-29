@@ -30,23 +30,21 @@ password: sunshine
 ```
 
 <p align="center">
-  <img src="screnshort/ICMP.png" width="600">
+  <img src="screenshort/sunshine.png" width="600">
 </p>
-
-so use this password to log into the webpage that is in the Machine’s IP.
 
 ### Result
 - Username: molly
 - Password: sunshine
 
-### Screenshot
+so use this password to log into the webpage that is in the Machine’s IP.
+
 <p align="center">
-  <img src="screnshort/ICMP.png" width="600">
+  <img src="screenshort/page login.png" width="600">
 </p>
 
-Flag 1
 <p align="center">
-  <img src="screnshort/ICMP.png" width="600">
+  <img src="screenshort/thm 1.png" width="600">
 </p>
 
 ### Flag 1
@@ -64,6 +62,11 @@ Here you need to brute force the SSH password. So, try brute forcing ssh passwor
 ```bash
 hydra -l molly -P /usr/share/wordlists/rockyou.txt ssh://10.48.186.172
 ```
+
+<p align="center">
+  <img src="screenshort/sunshine.png" width="600">
+</p>
+
 Now here you will again get a valid password in highlighted text
 ```bash
 login: molly
@@ -75,15 +78,15 @@ Now, think for a while and you will get to a point that the flag must be in the 
 ssh molly@10.48.186.172 (Your Machine IP)
 ```
 
-now type “Yes” if it asks you whether you want to continue.
-Enter the password, i.e: butterfly
 <p align="center">
-  <img src="screnshort/ICMP.png" width="600">
+  <img src="screenshort/ssh.png" width="600">
 </p>
 
-### Result
-- Username: molly
-- Password: butterfly
+now type “Yes” if it asks you whether you want to continue.
+
+Enter the password : butterfly
+
+
 
 Now when you get logged in, try
 ```bash
@@ -101,13 +104,19 @@ cat flag2.txt
 ```
 
 <p align="center">
-  <img src="screnshort/ICMP.png" width="600">
+  <img src="screenshort/ls.png" width="600">
 </p>
 
 ### Flag 2
 ```
 THM{c8eeb0468febbadea859baeb33b2541b}
 ```
+
+---
+Flag For TryHackMe
+<p align="center">
+  <img src="screenshort/thm code.png" width="600">
+</p>
 
 
 
